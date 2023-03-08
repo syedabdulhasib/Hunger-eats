@@ -1,0 +1,29 @@
+<div class="main11"> 
+{% for rating in ratings %}
+<div id="rating-2">  
+<div id="for-items">
+  <div>
+    <div id="rating-3">      {{rating.stars}} stars by
+      <a href="{% url 'profile' rating.user.id %}">
+        <!-- <img id="profilepic" src="{{rating.user.avatar.url}}" alt="" /> -->
+        @{{rating.user}}
+      </a> </div>
+
+    <div id="rating-4"> to <a href="{% url 'shop' rating.shopname.id  %}"> {{rating.shopname}}</a> </div>
+
+  </div>
+  <div id="rating-5">
+    {{rating.created|timesince}} ago  &nbsp;
+    {% url  'profile' rating.user.id  as profile %} 
+    {% if request.user == rating.user and  request.get_full_path == profile  %}
+    <div> 
+    <a href="{% url 'delete-rating' rating.id %}"> delete </a>
+  </div>
+    {% endif %}
+  </div>
+</div>
+
+</div>
+{% endfor %}
+</div>
+

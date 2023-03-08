@@ -1,0 +1,58 @@
+{% extends 'index.html' %}
+{% block content %}
+<div id="spacing"></div>
+
+<div id="profilepage"> 
+
+
+    <div> {% if request.user.username == user.username %}
+          <b>Your ratings </b>
+          {% else %}
+          <b>{{user.username.upper}} Ratings </b>
+           {% endif %}
+          <hr> 
+     <div> {% include 'hunger/rating-component.html' %}</div>
+    </div>
+
+
+
+   <div id="profile2"> 
+    <div id="profile3"> <img id="mainphoto" src="{{  user.avatar.url }}" alt="">
+        <br>
+        <br>
+       <b> {{user.username.upper}} </b>  {% if request.user == user %} <a href="{% url 'update-user' %}">edit</a> {% endif %}
+        <br> 
+        {{user.email}}
+        <br>
+        <br>
+        {% if user.bio != None %}
+        {{user.bio}}
+        {% endif %}
+
+    </div>
+    <div> 
+        <br>
+         <b> Shops Owned </b> 
+        <hr>
+        {% include 'hunger/shop-available.html' %}
+        
+         
+         </div> 
+   </div> 
+    
+    
+   <div>
+    {% if request.user.username == user.username %}
+          <b>Your comments </b>
+           {% else %}
+           <b>{{user.username.upper}} Comments </b>
+            {% endif %} <hr> 
+    <div> {% include 'hunger/shop-comments.html' %}  </div>
+     </div>
+
+
+
+   </div>
+
+
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends 'index.html' %}
+ {% block content %} 
+
+
+{% if page == "createshop" %}
+    <form action="" method="POST" required >
+    {% csrf_token %} {{form.as_p}}
+    <button type="submit"><a href="{{request.META.HTTP_REFERER}}"> back</a></button>
+    <input type="submit" required />
+    </form>
+
+
+  <!-- easy display of form  -->
+
+  <!-- {% for field in form %}
+        <label for="shop_name">{{field.label}}</label>
+        {{field}}
+        {% endfor %} -->
+
+{% elif  page == "updateshop" %}
+    <form action="" method="POST" required >
+    {% csrf_token %} {{form.as_p}}
+    <button><a href="{{request.META.HTTP_REFERER}}"> back</a></button>
+    <input type="submit" required />
+    </form>
+
+
+{% elif page == "deleteshop" %}
+    <form action="" method="POST" required >
+    {% csrf_token %} {{form.as_p}} Are you sure you want to delete this
+    Shop: <input type="submit" required />
+    <button><a href="{{request.META.HTTP_REFERER}}"> back</a></button>
+    </form>
+
+
+
+{% elif page == "createitem" %}
+
+    <form action="" method="POST"  >
+    {% csrf_token %} {{form.as_p}}
+    <button><a href="{{request.META.HTTP_REFERER}}"> back</a></button>
+    <input type="submit" required />
+    </form>
+
+
+
+{% elif page == "updateitem" %}
+
+    <form action="" method="POST"  >
+    {% csrf_token %} {{form.as_p}}
+    <button><a href="{{request.META.HTTP_REFERER}}"> back</a></button>
+    <input type="submit" required />
+    </form>
+
+{% elif page == "deleteitem" %}
+
+    <form action="" method="POST"  >
+    {% csrf_token %}  {{form.as_p }} Are you sure you want to delete this
+    item: <input type="submit" required />
+    <button><a href="{{request.META.HTTP_REFERER}}"> back</a></button>
+    </form>
+
+
+
+
+    <!-- {{form.as_p}}
+    <button><a href="{{request.META.HTTP_REFERER}}"> back</a></button>
+    <input type="submit" required /> -->
+    </form>
+
+
+{% endif %} 
+{% endblock %}
+
+
+    
+  
+

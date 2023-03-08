@@ -1,0 +1,511 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgb(0, 0, 0);
+}
+body {
+  background-color: rgb(37, 41, 48);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 208, 255);
+}
+#main {
+  width: 100%;
+  height: 1000px;
+  /* background-color: rgb(255, 255, 255); */
+}
+#main1{
+  width: 100%;
+  height: 1000px;
+}
+
+#list {
+  list-style: none;
+}
+
+.main1 {
+  height: 1000px;
+
+  /* background-color: cornflowerblue; */
+  /* overflow: scroll; */
+  margin: 50px 10px;
+  padding: 20px;
+  /* margin-left: 20px; */
+}
+.main11{
+    overflow: scroll;
+    height: 1000px;
+}
+/* #main12{
+    overflow: scroll;
+    height: 800px;
+}
+#main13{
+    overflow: scroll;
+    height: 800px;
+} */
+
+.main11::-webkit-scrollbar {
+  display: none;
+}
+/* #main12::-webkit-scrollbar{
+    display: none;
+}
+#main13::-webkit-scrollbar{
+    display: none;
+} */
+
+
+#find-shop {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 50px;
+  /* background-color: azure; */
+  align-items: center;
+}
+#find-shop1 {
+  color: rgb(83, 88, 88);
+  /* background-color: chartreuse; */
+  padding-left: 40px;
+  font-size: 30px;
+}
+#find-shop2 {
+  /* padding-left: 20px; */
+  font-size: 17px;
+  /* width: 130px; */
+  /* background-color: black; */
+}
+#all {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  /* background-color: blueviolet; */
+  padding-left: 50px;
+}
+#shop-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 300px;
+  margin: 10px;
+  font-size: 20px;
+  background-color: rgb(60, 58, 58);
+  /* border: 5px solid rgb(34, 34, 33); */
+  border-radius: 10px;
+  color: aliceblue;
+}
+#shop-list :hover {
+  transform: scale(0.95);
+}
+#shop-list li {
+  color: rgb(255, 255, 255);
+}
+
+  
+#m2 {
+  /* background-color: aquamarine; */
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+#form1 input {
+  width: 300px;
+  height: 50px;
+  background-color: rgb(238, 231, 231);
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+}
+#option{
+  width: 50px;
+  height: 50px;
+}
+#shop-count {
+  /* background-color: aliceblue; */
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+#shopcount1{
+  font-size: 20px;
+  /* color: rgb(83, 88, 88); */
+  color: rgb(185, 180, 180);
+  width: 30px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+#shopcount2{
+  height: 50px;
+  width: 50px;
+}
+#available{
+  color: rgb(185, 180, 180);
+  font-size: 20px;
+  padding-left: 20px;
+}
+#shop_body{
+  height: 220px;
+  margin: 30px;
+  background-color: rgb(60, 58, 58);
+  padding: 30px;
+  border-radius: 25px;
+}
+.shop_griding{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* height: 180px; */
+  /* background-color: green;  */
+}
+
+#shop_11{
+  height: 80px;
+}
+#shop_111{
+  color: white;
+  font-size: 20px;
+}
+#shop_112{
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+#shop_113{
+color: cyan;
+}
+#shop_12{
+  display: flex;
+  align-items: flex-end;
+  height: 80px;
+}
+#shop_2{
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  /* background-color: green; */
+}
+#shop_time{
+  color: white;
+}
+
+  /* background-color: blue; */
+
+#shop_13{
+  color: white;
+/* } */
+}
+#rating-1{
+  /* background-color: gainsboro; */
+  font-size: 25px;
+  color: rgb(185, 180, 180);
+  height: 50px;
+  margin-top: 50px;
+  /* margin-bottom: 0px; */
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+
+}
+
+#rating-2{
+  width: 400px;
+  height: 90px;
+  background-color: rgb(60, 58, 58);
+  /* background-color: rgb(71, 43, 43); */
+  border-radius: 10px;
+  margin: 20px;
+  padding: 5px;
+
+}
+#rating-3{
+  /* background-color: azure; */
+  padding: 15px 0px 5px 15px;
+  color: white;
+}
+#rating-4{
+  /* background-color: yellow; */
+  color: white;
+  padding-left: 15px;
+  /* padding: 10px; */
+}
+#rating-5{
+  width: 150px;
+  padding-top: 10px;
+  
+  /* margin-left: 10px; */
+  color: rgb(185, 180, 180);
+  display: flex;
+  /* align-items: flex-end;  */
+  
+}
+
+#for-navbar{
+  /* background-color: rgb(94, 101, 107); */
+  background-color: rgb(60, 58, 58);
+  width: 100% ;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+
+}
+#heading{
+  width: 1200px;
+  height: 80px;
+  /* background-color: rgb(255, 140, 0); */
+  display: grid;
+  grid-template-columns: 2fr 0.5fr;
+  /* padding: 10px; */
+}
+#headingsvg{
+  display: grid;
+  grid-template-columns: 0.25fr 2fr; 
+}
+#svg1{
+  padding-top: 10px;
+}
+#headingtext{
+  display: flex;
+  align-items: center;
+  color: rgb(185, 180, 180);
+}
+#heading2{
+  width: 200px;
+  height: 80px;
+  /* background-color: aliceblue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#heading3{
+  display: flex;
+  align-items: center;
+}
+#logout1 a{
+  color: rgb(185, 180, 180);
+}
+#login1 a{
+  color: rgb(185, 180, 180);
+}
+#register1 a{
+  color: rgb(185, 180, 180);
+}
+#shopname{
+  width: 100%;
+  height: 120px;
+  color: white;
+  padding: 20px 0px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#shopname2{
+  color: rgb(0, 208, 255);
+}
+#shopflex{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#shopinfo{
+  /* background-color: gray; */
+  width: 200px;
+  font-size: 30px;
+  height: 50px;
+  padding: 10px;
+  margin-left: 50px;
+  color: rgb(255, 255, 255);
+}
+.shopinfo1{
+  margin-left: 120px;
+  padding: 10px;
+  /* background-color: green; */
+  font-size: 20px;
+  color: white;
+
+}
+#shopinfo2{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ width: 100px;
+ height: 50px;
+ padding: 10px;
+
+}
+/* #photo3{
+text-align: center;
+} */
+
+#shopcrud{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  width: 400px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+#svg3{
+  transform: translateY(5px);
+}
+#shopowner{
+  display: flex;
+  align-items: center;
+}
+#owner3{
+  display: flex;
+  align-items: center;
+}
+#owner4{
+  color: rgb(195, 182, 36);
+  font-size: 25px;
+}
+#ratingform{
+  /* width: 100%; */
+  display: flex;
+  align-items: center; 
+}
+#flex1{
+  /* width: 500px; */
+  display: flex;
+  justify-content:end;
+  /* background-color: green; */
+  margin-right: 100px;
+  
+}
+#form1{
+  color: white;
+  font-size: 20px;
+}
+#form4 input{
+  border-radius: 5px;
+  width: 50px;
+  height: 20px;
+  border: none;
+  text-align: center;
+}
+#shopdescription1{
+  margin-top: 60px;
+  padding-left: 60px;
+  height: 50px;
+  color: cyan;
+  font-size: 25px;
+}
+#shopdescription2{
+  padding: 20px;
+  /* width: auto; */
+  font-size: 17px;
+  margin-left: 50px;
+  margin-right: 100px;
+  border-radius: 10px;
+  background-color: rgb(60, 58, 58);
+  color: wheat;
+}
+#middleshop{
+  margin-top: 60px;
+}
+#form5 input{
+  height: 40px;
+  width: 300px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+}
+#itemcount{
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  /* padding-left: 20px; */
+}
+#shopitems1{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 10px;
+  height: 50px;
+  font-size: 20px;
+  /* background-color: aliceblue; */
+}
+#item10{
+  height: 500px;
+  margin: 0px 20px ;
+}
+#item10{
+  overflow:scroll;
+  /* background-color: rgb(0, 136, 255); */
+}
+#item10::-webkit-scrollbar {
+  display: none;
+} 
+
+#things{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* height: 100px; */
+  background-color: rgb(60, 58, 58);
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px 25px 20px 25px;
+  
+}
+#thing1{
+  color: white;
+}
+#itemend{
+text-align: end;
+padding-right: 10px;
+color: white;
+}
+#comment_term{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 70px;
+  margin-top: 60px;
+  margin-left: 50px;
+  font-size: 25px;
+  padding-left: 50px;
+}
+#comment_term_1{
+  color: rgb(83, 88, 88);
+}
+#comment_term_2{
+background-color: rgb(60, 58, 58);
+margin-right: 50px;
+height: 50px;
+text-align: center;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#comment_term_2 a{
+  color: cyan;
+  font-size: 20px;
+}
+#comment_1{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 10px;
+  background-color: rgb(60, 58, 58);
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  
+  /* width: 500px; */
+  padding: 20px;
+}
+#comment_body{
+  color: white;
+}
+#comment_time{
+  color: white;
+  text-align: end;
+  width: 160px;
+}
+#spacing{
+  height: 50px;
+  width: 100%;
+}

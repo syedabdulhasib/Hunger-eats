@@ -1,0 +1,30 @@
+<div class="main11">
+  {% for shop in shops %}
+  <a class="shop_hovering" href="{% url 'shop' shop.id  %}">
+    <div id="shop_body">
+      <div class="shop_griding">
+        <div id="shop_1">
+          <div id="shop_11">
+            <div id="shop_111">{{shop.shop_name}}</div>
+            <div id="shop_112">
+              <div>
+                <img
+                  id="profilepic"
+                  src="{{shop.shop_host.avatar.url}}"
+                  alt=""
+                />
+              </div>
+              <div id="shop_113">@{{shop.shop_host}}</div>
+            </div>
+          </div>
+          <div id="shop_12"><div id="shop_13">{{shop.location}}</div></div>
+        </div>
+
+        <div id="shop_2">
+          <div id="shop_time">{{shop.created|timesince}} ago</div>
+        </div>
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>

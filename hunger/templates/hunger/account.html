@@ -1,0 +1,72 @@
+{% extends 'index.html' %}
+{% block content %}
+
+{% if page == 'login' %}
+
+      
+      <form class="form" action="" method="POST">
+        {% csrf_token %}
+          <label for="room_name">Username</label>
+          <input id="username" name="username" type="text" placeholder="e.g. dennis_ivy" />
+          <br>
+
+
+          <label for="password">Password</label>
+        
+          <input
+            id="password"
+            name="password"
+            type="password" />
+            <br>
+            <button><a href="{% url 'home' %}"> back</a></button>
+
+
+            <input type="submit"  />
+            <br>
+      </form>
+
+
+        <p>Haven't signed up yet?</p>
+        <a href="{% url 'register' %}"> Sign Up</a>
+
+{% elif page == "register" %}
+
+<!-- <form action="" method="POST" required >
+  {% csrf_token %} 
+   <label for="username"> username </label><input type="text" name="username" required>
+   <br>
+   <label for="email"> Email</label> <input type="email" name="email" required>
+   <br>
+   <label for="password1">Password</label> <input type="password" name="password1" id="password1" required>
+   <br>
+   <label for="password2">Confirm Password</label> <input type="password" name="password2" id="password2" required>
+   <br>
+  <button><a href="{% url 'home' %}"> back</a></button>
+
+  <input type="submit"  /> -->
+
+  <form action="" method="POST"  >
+    {% csrf_token %} {{form.as_p}}
+    <button><a href="{% url 'home' %}"> back</a></button>
+    <input type="submit" />
+
+
+  <br>  
+  <p>Already signed up?</p>
+ <a href="{% url 'login' %}">Login</a>
+  </form>
+
+{% elif page == "update-user" %}
+
+<form action="" method="POST" enctype="multipart/form-data" >
+  {% csrf_token %} {{form.as_p}}
+  <button><a href="{% url 'home' %}"> back</a></button>
+  <input type="submit" />
+  </form>
+{% endif %}
+
+
+
+
+
+{% endblock %}

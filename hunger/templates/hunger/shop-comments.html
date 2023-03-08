@@ -1,0 +1,29 @@
+<div class="main11">
+  {% for comment in comments %}
+
+  <div id="comment_1">
+    <div>
+      <a href="{% url 'profile' comment.user.id %}">
+        <img id="profilepic" src="{{comment.user.avatar.url}}" alt="" />
+        @{{comment.user}}</a
+      >
+      <br />
+      <br />
+      <div id="comment_body">
+        {{comment.body}}
+      </div>
+    </div>
+    <div id="comment_time">
+      {{comment.created|timesince}} ago 
+      <br>
+      {% if comment.user == request.user %}
+      <br>
+      <br>
+      <a href="{% url 'delete-message' comment.id %}">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"><g data-name="Layer 51"><path d="M3 9h2v15.46C5 27.58 8.52 30 11.54 30h8.92c3 0 6.54-2.42 6.54-5.54V9h2a1 1 0 0 0 0-2h-5.07c-.34-2.47-2.11-5-7.93-5S8.41 4.53 8.07 7H3a1 1 0 0 0 0 2Zm13-5c4.38 0 5.6 1.51 5.91 3H10.09c.31-1.49 1.53-3 5.91-3Zm9 5v15.46c0 1.87-2.54 3.54-4.54 3.54h-8.92C9.54 28 7 26.33 7 24.46V9Z"/><path d="M16 26a1 1 0 0 0 1-1V12a1 1 0 0 0-2 0v13a1 1 0 0 0 1 1zm-5 0a1 1 0 0 0 1-1V12a1 1 0 0 0-2 0v13a1 1 0 0 0 1 1zm10 0a1 1 0 0 0 1-1V12a1 1 0 0 0-2 0v13a1 1 0 0 0 1 1z"/></g></svg>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

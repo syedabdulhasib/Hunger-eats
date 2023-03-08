@@ -1,0 +1,19 @@
+<div id="find-shop">
+  <div id="find-shop1">Find Shops</div>
+  <div id="find-shop2"><a href="{% url 'create-shop' %}"> Open a shop</a></div>
+</div>
+
+<ul id="list">
+  <div id="all">
+    <li><a href="{% url 'home' %}">All Shops</a></li>
+  </div>
+  <div  class="main11">
+  {% for shop in shops %}
+  <a id="a1" href="{% url 'home' %}?q={{shop.shop_name}}">
+    <div id="shop-list">
+      <li>{{shop.shop_name}}</li>
+    </div></a
+  >
+  {% endfor %}
+</div>
+</ul>

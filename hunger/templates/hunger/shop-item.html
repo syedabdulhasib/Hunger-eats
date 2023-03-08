@@ -1,0 +1,53 @@
+<div id="m2">
+  <div>
+    <form id="form5" action="" method="get">
+      {% csrf_token %}
+      <input name="z" placeholder="Search for Items" />
+      <!-- <input type="submit" /> -->
+    </form>
+  </div>
+
+  <div id="itemcount">{{items_count}}&nbsp; Items available</div>
+</div>
+<div id="shopitems1">
+  <div><a href="{% url 'shop' shop.id %}">All Items</a></div>
+  {% if shop.shop_host == request.user %}
+  <div><a href="{% url 'create-item' shop.id  %}">Add items </a></div>
+  {% endif %}
+</div>
+
+<div id="item10">
+
+  {% for thing in item %}
+  
+  <div id="things">
+    
+    
+      <div id="thing1">
+       
+        {{thing.name}} 
+       
+    </div>
+
+    <div id="itemend"> ₹ {{thing.price}}
+      <br>
+      <br>
+      {% if shop.shop_host == request.user %}
+      <span><a href="{% url 'update-item' thing.id %}">
+        <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 512 512" height="20" width="20"><defs><linearGradient id="a" x1="255.986" x2="255.986" y1="460" y2="32" gradientTransform="matrix(1 0 0 -1 0 514)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#00efd1"/><stop offset="1" stop-color="#00acea"/></linearGradient></defs><path fill="url(#a)" d="M429.264,55.929a60,60,0,0,0-84.853,0L72.741,327.6a9.894,9.894,0,0,0-.819.94c-.062.081-.121.165-.182.248a9.873,9.873,0,0,0-.558.851c-.04.069-.083.136-.121.206a9.883,9.883,0,0,0-.545,1.144c-.007.018-.012.037-.019.055a9.658,9.658,0,0,0-.357,1.125c-.012.046-.032.088-.043.134L38.641,461.275A10,10,0,0,0,50.725,473.36L179.7,441.9c.049-.012.094-.033.142-.045a10,10,0,0,0,1.11-.353c.021-.008.044-.014.064-.023a9.827,9.827,0,0,0,1.141-.543c.071-.039.139-.082.209-.123a9.987,9.987,0,0,0,.849-.557c.083-.06.166-.119.247-.182a10.038,10.038,0,0,0,.94-.819L456.071,167.588a60.069,60.069,0,0,0,0-84.854ZM177.331,418.044l-18.354-18.353L380.451,178.218l18.354,18.353Zm-32.5-32.5-18.384-18.384L347.925,145.691l18.384,18.384Zm-32.526-32.527L93.955,334.668,315.429,113.2l18.354,18.353Zm-27,1.291,72.372,72.372L61.968,450.031ZM441.929,153.447l-28.981,28.982L329.572,99.053l28.982-28.982a40,40,0,0,1,56.567,0l26.808,26.807A40.045,40.045,0,0,1,441.929,153.447Z"/></svg>
+
+      </a> &nbsp; </span>
+      
+      <span><a href="{% url 'delete-item' thing.id %}">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"><g data-name="Layer 51"><path d="M3 9h2v15.46C5 27.58 8.52 30 11.54 30h8.92c3 0 6.54-2.42 6.54-5.54V9h2a1 1 0 0 0 0-2h-5.07c-.34-2.47-2.11-5-7.93-5S8.41 4.53 8.07 7H3a1 1 0 0 0 0 2Zm13-5c4.38 0 5.6 1.51 5.91 3H10.09c.31-1.49 1.53-3 5.91-3Zm9 5v15.46c0 1.87-2.54 3.54-4.54 3.54h-8.92C9.54 28 7 26.33 7 24.46V9Z"/><path d="M16 26a1 1 0 0 0 1-1V12a1 1 0 0 0-2 0v13a1 1 0 0 0 1 1zm-5 0a1 1 0 0 0 1-1V12a1 1 0 0 0-2 0v13a1 1 0 0 0 1 1zm10 0a1 1 0 0 0 1-1V12a1 1 0 0 0-2 0v13a1 1 0 0 0 1 1z"/></g></svg>
+
+      </a> </span>
+    
+    
+    {% endif %}
+    </div>
+     </div>
+    
+  {% endfor %}
+</div>
+
