@@ -35,6 +35,7 @@ class Shop(models.Model):
     location=models.TextField(max_length=100,null=True)
     updated =models.DateTimeField(auto_now=True)
     created=models.DateTimeField(auto_now_add=True)
+    shop_image=models.ImageField(null=True,default="vegetables-set-left-black-slate.jpg")
 
     class Meta:
         ordering=['shop_name']

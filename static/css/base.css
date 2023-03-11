@@ -12,6 +12,7 @@ a {
   text-decoration: none;
   color: rgb(0, 208, 255);
 }
+
 #main {
   width: 100%;
   height: auto;
@@ -253,25 +254,43 @@ color: cyan;
   justify-content: center;
 
 }
-#heading{
-  width: 1200px;
+.head1{
+  width: 100%;
   height: 80px;
+  background-color: rgb(135, 156, 92);
+  }
+#heading{
+  width: 80%;
+    height: 80px;
   /* background-color: rgb(255, 140, 0); */
   display: grid;
   grid-template-columns: 2fr 0.5fr;
   /* padding: 10px; */
 }
 #headingsvg{
+  height: 80px;
   display: grid;
   grid-template-columns: 0.25fr 2fr; 
 }
-#svg1{
-  padding-top: 10px;
+#svg_1{
+  padding: 10px;
+  height: 80px;
+
 }
+#svg_1 img{
+  width: 60px;
+  height: 60px;
+  /* height: 6 0px; */
+}
+
+
 #headingtext{
+  height: 80px;
   display: flex;
   align-items: center;
   color: rgb(185, 180, 180);
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #heading2{
   width: 200px;
@@ -281,7 +300,26 @@ color: cyan;
   justify-content: space-between;
   align-items: center;
 }
+#shop_background_image{
+  /* width: 100%; */
+  background-image: url(../images/background\ for\ shop.png) ;
+  height: auto;
+  border-bottom: 10px solid rgb(129, 121, 120);
+  border-top: 10px solid rgb(129, 121, 120);
+  border-right: 10px solid rgb(129, 121, 120);
+  border-left: 10px solid rgb(129, 121, 120);
+  border-radius: 5px;
+  margin: 50px 25px 0px 25px;
+
+  /* image-resolution: 2000px; */
+  /* height: 500px; */
+}
+/* #shop_background_image img{
+width: 100%;
+height: 500px;
+} */
 #heading3{
+  height: 40px;
   display: flex;
   align-items: center;
 }
