@@ -7,10 +7,7 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr;
 }
-#shop {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
+
 #for-items {
   display: grid;
   grid-template-columns: 2fr 1fr;

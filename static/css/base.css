@@ -282,7 +282,13 @@ color: cyan;
   height: 60px;
   /* height: 6 0px; */
 }
-
+#shop {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#shop_description{
+  width: auto;
+}
 
 #headingtext{
   height: 80px;
@@ -437,7 +443,8 @@ text-align: center;
   font-size: 17px;
   font-family:cursive;
   margin-left: 50px;
-  margin-right: 100px;
+  margin-right: 50px;
+  /* margin-right: 100px; */
   border-radius: 10px;
   background-color: rgb(60, 58, 58);
   color: rgb(255, 255, 255);
@@ -500,31 +507,36 @@ align-items: center;
 }
 #shop_comments{
   margin: 50px;
+  /* width: 400px; */
 }
 #comment_term{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   font-size: 25px;
 }
 #comment_term_1{
   color: rgb(0, 208, 255);
-  width: 400px;
+  /* width: auto; */
 }
 #comment_term_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 150px;
 background-color: rgb(60, 58, 58);
 height: 40px;
-text-align: center;
+/* text-align: center; */
 border-radius: 10px;
-display: flex;
+/* display: flex;
 align-items: center;
-justify-content: center;
+justify-content: center; */
 }
 #comment_term_2 a{
   color:gold;
   font-size: 15px;
 }
 #comment_1{
+  /* width: 500px; */
   display: grid;
   grid-template-columns: 2fr 1fr;
   border-radius: 10px;
@@ -581,7 +593,7 @@ justify-content: center;
 }
 #profile_div_3{
   margin: 20px;
-  margin-left: 79.98px;
+  /* margin-left: 79.98px; */
   padding-right: 20px;
 }
 #profile3{
