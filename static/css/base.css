@@ -14,12 +14,12 @@ a {
 }
 #main {
   width: 100%;
-  height: 1000px;
+  height: auto;
   /* background-color: rgb(255, 255, 255); */
 }
 #main1{
   width: 100%;
-  height: 1000px;
+  height: auto;
 }
 
 #list {
@@ -27,7 +27,7 @@ a {
 }
 
 .main1 {
-  height: 1000px;
+  height: auto;
 
   /* background-color: cornflowerblue; */
   /* overflow: scroll; */
@@ -37,7 +37,7 @@ a {
 }
 .main11{
     overflow: scroll;
-    height: 1000px;
+    height: auto;
 }
 /* #main12{
     overflow: scroll;
@@ -67,7 +67,7 @@ a {
   align-items: center;
 }
 #find-shop1 {
-  color: rgb(83, 88, 88);
+  color: gold;
   /* background-color: chartreuse; */
   padding-left: 40px;
   font-size: 30px;
@@ -186,6 +186,7 @@ color: cyan;
   height: auto;
   display: flex;
   align-items: flex-end;
+  justify-content: end;
   /* background-color: green; */
 }
 #shop_time{
@@ -212,13 +213,13 @@ color: cyan;
 }
 
 #rating-2{
-  width: 400px;
+  width: 420px;
   height: 90px;
   background-color: rgb(60, 58, 58);
   /* background-color: rgb(71, 43, 43); */
   border-radius: 10px;
   margin: 20px;
-  padding: 5px;
+  padding:5px 10px;
 
 }
 #rating-3{
@@ -317,7 +318,7 @@ color: cyan;
   height: 50px;
   padding: 10px;
   margin-left: 50px;
-  color: rgb(255, 255, 255);
+  color:gold;
 }
 .shopinfo1{
   margin-left: 120px;
@@ -358,7 +359,7 @@ text-align: center;
   align-items: center;
 }
 #owner4{
-  color: rgb(195, 182, 36);
+  color: rgb(255, 255, 255);
   font-size: 25px;
 }
 #ratingform{
@@ -396,11 +397,12 @@ text-align: center;
   padding: 20px;
   /* width: auto; */
   font-size: 17px;
+  font-family:cursive;
   margin-left: 50px;
   margin-right: 100px;
   border-radius: 10px;
   background-color: rgb(60, 58, 58);
-  color: wheat;
+  color: rgb(255, 255, 255);
 }
 #middleshop{
   margin-top: 60px;
@@ -412,6 +414,9 @@ text-align: center;
   border: none;
   text-align: center;
 }
+#add_items a{
+  color: wheat;
+}
 #itemcount{
   color: whitesmoke;
   display: flex;
@@ -422,7 +427,7 @@ text-align: center;
 }
 #shopitems1{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 4fr 1fr;
   padding: 10px;
   height: 50px;
   font-size: 20px;
@@ -446,34 +451,41 @@ text-align: center;
   /* height: 100px; */
   background-color: rgb(60, 58, 58);
   margin: 20px;
-  border-radius: 20px;
-  padding: 20px 25px 20px 25px;
+  border-radius: 10px;
+  padding: 10px 20px;
+
   
 }
 #thing1{
   color: white;
+  display: flex;
+  align-items: center;
 }
 #itemend{
-text-align: end;
-padding-right: 10px;
-color: white;
+/* text-align: end; */
+/* padding-right: 10px; */
+color: rgb(112, 230, 66);
+display: flex;
+justify-content: end;
+align-items: center;
+
+}
+#shop_comments{
+  margin: 50px;
 }
 #comment_term{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 70px;
-  margin-top: 60px;
-  margin-left: 50px;
   font-size: 25px;
-  padding-left: 50px;
 }
 #comment_term_1{
-  color: rgb(83, 88, 88);
+  color: rgb(0, 208, 255);
+  width: 400px;
 }
 #comment_term_2{
+  width: 150px;
 background-color: rgb(60, 58, 58);
-margin-right: 50px;
-height: 50px;
+height: 40px;
 text-align: center;
 border-radius: 10px;
 display: flex;
@@ -481,21 +493,17 @@ align-items: center;
 justify-content: center;
 }
 #comment_term_2 a{
-  color: cyan;
-  font-size: 20px;
+  color:gold;
+  font-size: 15px;
 }
 #comment_1{
   display: grid;
   grid-template-columns: 2fr 1fr;
   border-radius: 10px;
   background-color: rgb(60, 58, 58);
-  margin-right: 50px;
-  margin-top: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
   padding: 15px;
-  
-  /* width: 500px; */
-  padding: 20px;
 }
 #comment_body{
   color: white;
@@ -508,4 +516,70 @@ justify-content: center;
 #spacing{
   height: 50px;
   width: 100%;
+
+}
+#rating_1{
+  width: auto;
+  padding: 15px;
+  margin-left: 10px;
+}
+#rating_1 b{
+  color: gold;
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#comments_1{
+  width: auto;
+  /* padding: 15px; */
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#comments_1 b{
+  color: gold;
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#profile2{
+  margin-top: 50px;
+}
+/* #comments{
+  margin-left: 99.98px;
+} */
+#profile_div_1{
+  margin: 20px;
+}
+#profile_div_2{
+  margin: 20px;
+}
+#profile_div_3{
+  margin: 20px;
+  margin-left: 79.98px;
+  padding-right: 20px;
+}
+#profile3{
+  margin-top: 50px;
+}
+#profile_info_1{
+  margin: 20px;
+}
+#profile_info_1 b{
+  color: gold;
+}
+#profile_info_2{
+  margin:10px;
+  height: 30px;
+  color: white;
+}
+#profile_info_3{
+  color: white;
+}
+#shops_owned_profile_1{
+  /* background-color: green; */
+  margin: 20px;
+}
+#shop_profile_1{
+  /* background-color: yellow; */
+  padding: 10px;
+  color: rgb(0, 208, 255);
+  font-size: 20px;
 }
