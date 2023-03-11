@@ -49,7 +49,7 @@ class Items(models.Model):
     shop=models.ForeignKey(Shop,on_delete=models.SET_NULL,null=True)
     updated =models.DateTimeField(auto_now=True)
     created=models.DateTimeField(auto_now_add=True)
-    items_image=models.ImageField(null=True,default="base1items.jpg")
+    items_image=models.ImageField(null=True,default="base image.jpg")
 
     class Meta:
         ordering=['name']
