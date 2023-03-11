@@ -25,14 +25,6 @@ class User(AbstractUser):
 
 
 
-    
-    
-
-
-
-
-
-    
 class Shop(models.Model):
     item=models.ForeignKey("Items", blank=True,on_delete=models.SET_NULL,null=True, related_name="items")
     shop_name=models.CharField(max_length=100 ,blank=True,unique=True)
@@ -57,6 +49,7 @@ class Items(models.Model):
     shop=models.ForeignKey(Shop,on_delete=models.SET_NULL,null=True)
     updated =models.DateTimeField(auto_now=True)
     created=models.DateTimeField(auto_now_add=True)
+    items_image=models.ImageField(null=True,default="base1items.jpg")
 
     class Meta:
         ordering=['name']

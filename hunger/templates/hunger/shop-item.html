@@ -19,8 +19,11 @@
 <div id="item10">
 
   {% for thing in item %}
-  
+
+
   <div id="things">
+    <div id="item_image"> <img src="{{ thing.items_image.url }}" alt=""></div>
+    <div id="item_a"> 
     
     
       <div id="thing1">
@@ -45,6 +48,8 @@
     {% endif %}
     </div>
      </div>
+    </div>
+
     
   {% endfor %}
 </div>
