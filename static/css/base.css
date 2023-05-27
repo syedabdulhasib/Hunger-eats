@@ -652,3 +652,27 @@ justify-content: center; */
    object-fit:fill;
   border-radius: 20px;
 }
+.commenting-form{
+  margin-top: 25px;
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+}
+#submit-flex{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+#comment_button{
+  /* margin: 12.5px; */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100px;
+  height: 40px;
+  background-color: aqua;
+  border-radius: 10px;
+}
+#comment_button:hover {
+  background-color: yellow;
+}
